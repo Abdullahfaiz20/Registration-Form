@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+    <link rel="stylesheet" href="registerform.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main_heading"> Registration</h1>
+        <form action="" id="registration-form">
+            <p>
+                Name:<input type="text" id="full-name" name="full_name" required>
+            </p>
+            <p>
+                Email Address:<input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                Mobile Number:<input type="number" name="mobilenumber" id="" required>
+            </p>
+            <p>
+                Birth Date:<input type="date" name="birthdate" id="birthdate" required>
+            </p>
+            <label for="gender">Gender:</label>
+            <fieldset>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+            <p>
+                Address: <textarea name="Address" id="address" cols="60" rows="6" required></textarea>
+            </p>
+            <input type="submit" value="Register" required>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
